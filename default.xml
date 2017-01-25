@@ -1,8 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <manifest>
-  <remote name="opx" fetch="https://github.com/open-switch" revision="master"/>
   <remote name="mabnhdev" fetch="https://github.com/mabnhdev" revision="master"/>
+  <remote name="extreme" fetch="ssh://git@giteng1" revision="master"/>
+  <remote name="opx" fetch="https://github.com/open-switch" revision="master"/>
   <default remote="opx" sync-j="4"/>
+
+  <!-- The follwing is a set of helper tools for maintaining OpenSwitch locally. -->
+  <project path="opx-helpers" name="opx-helpers" remote="extreme"/>
 
   <!-- The following section is for platform-specific configuration files-->
   <project path="opx-platform-config" name="opx-platform-config"/>
