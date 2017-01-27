@@ -49,7 +49,7 @@
   <project path="opx-sdi-device-drivers" name="opx-sdi-device-drivers" remote="mabnhdev"/>
   <project path="opx-sdi-sys" name="opx-sdi-sys"/>
   <project path="opx-sdi-sys-vm" name="opx-sdi-sys-vm"/>
-  <project path="opx-sdi-framework" name="opx-sdi-framework" remote="mabnhdev"/>
+  <project path="opx-sdi-framework" name="opx-sdi-framework"/>
 
   <!-- SDI implementation for Mellanox platforms -->
   <project name="opx-mlnx-sdi-sys"/>
