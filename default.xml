@@ -42,7 +42,7 @@
   <project name="opx-sai-vm"/>
 
   <!-- The following section is for platform service configuration -->
-  <project path="opx-pas" name="opx-pas" remote="mabnhdev"/>
+  <project path="opx-pas" name="opx-pas"/>
 
   <!-- SDI -->
   <project path="opx-sdi-api" name="opx-sdi-api"/>
