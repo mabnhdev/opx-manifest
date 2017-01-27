@@ -9,8 +9,7 @@
   <project path="opx-helpers" name="opx-helpers" remote="extreme"/>
 
   <!-- The following section is for platform-specific configuration files-->
-  <project path="opx-platform-config" name="opx-platform-config"/>
-  <project path="opx-platform-config-extreme-x870" name="opx-platform-config-extreme-x870" remote="mabnhdev"/>
+  <project path="opx-platform-config" name="opx-platform-config" remote="mabnhdev"/>
   
   <!-- The following section is for infrastructure and libraries-->
   <project path="opx-common-utils" name="opx-common-utils"/>
