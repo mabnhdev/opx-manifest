@@ -13,7 +13,7 @@
   
   <!-- The following section is for infrastructure and libraries-->
   <project path="opx-common-utils" name="opx-common-utils"/>
-  <project path="opx-cps" name="opx-cps" remote="mabnhdev"/>
+  <project path="opx-cps" name="opx-cps"/>
   <project path="opx-db-sql" name="opx-db-sql"/>
   <project path="opx-logging" name="opx-logging"/>
 
