@@ -5,9 +5,6 @@
   <remote name="opx" fetch="https://github.com/open-switch" revision="master"/>
   <default remote="opx" sync-j="4"/>
 
-  <!-- The follwing is a set of helper tools for maintaining OpenSwitch locally. -->
-  <project path="opx-helpers" name="opx-helpers" remote="extreme"/>
-
   <!-- The following section is for platform-specific configuration files-->
   <project path="opx-platform-config" name="opx-platform-config" remote="mabnhdev"/>
   
@@ -57,5 +54,6 @@
   <project name="opx-tmpctl"/>
   
   <!-- The following section is for build tools and scripts -->
-  <project name="opx-build"/>
+  <project path="opx-build" name="opx-build" remote="mabnhdev"/>
+
 </manifest>
