@@ -54,7 +54,6 @@
   <project name="opx-tmpctl"/>
   
   <!-- The following section is for build tools and scripts -->
-  <project path="opx-build" name="opx-build"/>
-  <project path="opx-build-snap" name="opx-build-snap" remote="extreme"/>
-
+  <project name="opx-build"/>
+  <project name="opx-build-snap" remote="extreme"/>
 </manifest>
