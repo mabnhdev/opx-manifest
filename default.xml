@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <manifest>
   <remote name="mabnhdev" fetch="https://github.com/mabnhdev" revision="master"/>
+  <remote name="gsherwin3" fetch="https://github.com/gsherwin3" revision="master"/>
   <remote name="extreme" fetch="ssh://git@giteng1" revision="master"/>
   <remote name="opx" fetch="https://github.com/open-switch" revision="master"/>
   <default remote="opx" sync-j="4"/>
@@ -18,34 +19,36 @@
   <project name="opx-base-model"/>
 
   <!-- The following section is for all networking related functions including ACLs, QoS, etc.. -->
-  <project name="opx-nas-acl"/>
-  <project name="opx-nas-common"/>
-  <project name="opx-nas-daemon"/>
-  <project name="opx-nas-interface"/>
-  <project name="opx-nas-l2"/>
-  <project name="opx-nas-l3"/>
+  <project name="opx-nas-acl" remote="gsherwin3"/>
+  <project name="opx-nas-common" remote="gsherwin3"/>
+  <project name="opx-nas-daemon" remote="gsherwin3"/>
+  <project name="opx-nas-interface" remote="gsherwin3"/>
+  <project name="opx-nas-l2" remote="gsherwin3"/>
+  <project name="opx-nas-l3" remote="gsherwin3"/>
   <project name="opx-nas-ndi"/>
   <project name="opx-nas-ndi-api"/>
-  <project name="opx-nas-qos"/>
+  <project name="opx-nas-platform-s6000"/>
+  <project name="opx-nas-platform-vm"/>
+  <project name="opx-nas-qos" remote="gsherwin3"/>
 
   <!-- The following section is for the linux adaption layer - essentially the hooks allowing linux to work with the rest of the system -->
-  <project name="opx-nas-linux"/>
+  <project name="opx-nas-linux" remote="gsherwin3"/>
 
   <!-- SAI -->
-  <project path="opx-sai-api" name="SAI" revision="dell.0.94+" />  
-  <project name="opx-sai-common"/>
-  <project name="opx-sai-common-utils"/>
-  <project name="opx-sai-vm"/>
+  <project name="opx-sai-api" remote="gsherwin3"/>
+  <project name="opx-sai-common" remote="gsherwin3"/>
+  <project name="opx-sai-common-utils" remote="gsherwin3"/>
+  <project name="opx-sai-vm" remote="gsherwin3"/>
 
   <!-- The following section is for platform service configuration -->
   <project path="opx-pas" name="opx-pas"/>
 
   <!-- SDI -->
-  <project path="opx-sdi-api" name="opx-sdi-api"/>
-  <project path="opx-sdi-device-drivers" name="opx-sdi-device-drivers" remote="mabnhdev"/>
-  <project path="opx-sdi-sys" name="opx-sdi-sys"/>
-  <project path="opx-sdi-sys-vm" name="opx-sdi-sys-vm"/>
-  <project path="opx-sdi-framework" name="opx-sdi-framework"/>
+  <project name="opx-sdi-api"/>
+  <project name="opx-sdi-device-drivers" remote="mabnhdev"/>
+  <project name="opx-sdi-sys"/>
+  <project name="opx-sdi-sys-vm" remote="gsherwin3"/>
+  <project name="opx-sdi-framework"/>
 
   <!-- SDI implementation for Mellanox platforms -->
   <project name="opx-mlnx-sdi-sys"/>
