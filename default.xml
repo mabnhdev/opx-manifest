@@ -19,26 +19,26 @@
   <project name="opx-base-model"/>
 
   <!-- The following section is for all networking related functions including ACLs, QoS, etc.. -->
-  <project name="opx-nas-acl" remote="gsherwin3"/>
-  <project name="opx-nas-common" remote="gsherwin3"/>
-  <project name="opx-nas-daemon" remote="gsherwin3"/>
-  <project name="opx-nas-interface" remote="gsherwin3"/>
-  <project name="opx-nas-l2" remote="gsherwin3"/>
-  <project name="opx-nas-l3" remote="gsherwin3"/>
+  <project name="opx-nas-acl" remote="mabnhdev"/>
+  <project name="opx-nas-common" remote="mabnhdev"/>
+  <project name="opx-nas-daemon" remote="mabnhdev"/>
+  <project name="opx-nas-interface" remote="mabnhdev"/>
+  <project name="opx-nas-l2"/>
+  <project name="opx-nas-l3"/>
   <project name="opx-nas-ndi"/>
   <project name="opx-nas-ndi-api"/>
   <project name="opx-nas-platform-s6000"/>
   <project name="opx-nas-platform-vm"/>
-  <project name="opx-nas-qos" remote="gsherwin3"/>
+  <project name="opx-nas-qos" remote="mabnhdev"/>
 
   <!-- The following section is for the linux adaption layer - essentially the hooks allowing linux to work with the rest of the system -->
-  <project name="opx-nas-linux" remote="gsherwin3"/>
+  <project name="opx-nas-linux"/>
 
   <!-- SAI -->
-  <project name="opx-sai-api" remote="gsherwin3"/>
-  <project name="opx-sai-common" remote="gsherwin3"/>
-  <project name="opx-sai-common-utils" remote="gsherwin3"/>
-  <project name="opx-sai-vm" remote="gsherwin3"/>
+  <project name="opx-sai-api"/>
+  <project name="opx-sai-common" remote="mabnhdev"/>
+  <project name="opx-sai-common-utils"/>
+  <project name="opx-sai-vm" remote="mabnhdev"/>
 
   <!-- The following section is for platform service configuration -->
   <project path="opx-pas" name="opx-pas"/>
@@ -47,7 +47,7 @@
   <project name="opx-sdi-api"/>
   <project name="opx-sdi-device-drivers" remote="mabnhdev"/>
   <project name="opx-sdi-sys"/>
-  <project name="opx-sdi-sys-vm" remote="gsherwin3"/>
+  <project name="opx-sdi-sys-vm" remote="mabnhdev"/>
   <project name="opx-sdi-framework"/>
 
   <!-- SDI implementation for Mellanox platforms -->
