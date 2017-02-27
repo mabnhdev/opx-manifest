@@ -15,16 +15,16 @@
   <project name="opx-logging"/>
 
   <!-- The following section is for API model definitions -->
-  <project name="opx-base-model"/>
+  <project name="opx-base-model" remote="extreme_opx"/>
 
   <!-- The following section is for all networking related functions including ACLs, QoS, etc.. -->
   <project name="opx-nas-acl" remote="extreme_opx"/>
   <project name="opx-nas-common" remote="extreme_opx"/>
   <project name="opx-nas-daemon" remote="extreme_opx"/>
   <project name="opx-nas-interface" remote="extreme_opx"/>
-  <project name="opx-nas-l2"/>
+  <project name="opx-nas-l2" remote="extreme_opx"/>
   <project name="opx-nas-l3"/>
-  <project name="opx-nas-ndi"/>
+  <project name="opx-nas-ndi" remote="extreme_opx"/>
   <project name="opx-nas-ndi-api"/>
   <project name="opx-nas-qos" remote="extreme_opx"/>
 
@@ -38,7 +38,7 @@
   <project name="opx-sai-vm" remote="extreme_opx"/>
 
   <!-- The following section is for platform service configuration -->
-  <project path="opx-pas" name="opx-pas"/>
+  <project name="opx-pas"/>
 
   <!-- SDI -->
   <project name="opx-sdi-api"/>
