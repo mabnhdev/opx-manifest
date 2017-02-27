@@ -1,53 +1,50 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <manifest>
-  <remote name="mabnhdev" fetch="https://github.com/mabnhdev" revision="master"/>
-  <remote name="gsherwin3" fetch="https://github.com/gsherwin3" revision="master"/>
   <remote name="extreme" fetch="ssh://git@giteng1" revision="master"/>
-  <remote name="opx" fetch="https://github.com/open-switch" revision="master"/>
+  <remote name="extreme_opx" fetch="ssh://git@giteng1" revision="extreme_opx"/>
+  <remote name="opx" fetch="https://github.com/open-switch" revision="master"/>   
   <default remote="opx" sync-j="4"/>
 
   <!-- The following section is for platform-specific configuration files-->
-  <project path="opx-platform-config" name="opx-platform-config" remote="mabnhdev"/>
+  <project name="opx-platform-config" remote="extreme_opx"/>
   
   <!-- The following section is for infrastructure and libraries-->
-  <project path="opx-common-utils" name="opx-common-utils" remote="mabnhdev"/>
-  <project path="opx-cps" name="opx-cps"/>
-  <project path="opx-db-sql" name="opx-db-sql"/>
-  <project path="opx-logging" name="opx-logging"/>
+  <project name="opx-common-utils" remote="extreme_opx"/>
+  <project name="opx-cps"/>
+  <project name="opx-db-sql"/>
+  <project name="opx-logging"/>
 
   <!-- The following section is for API model definitions -->
   <project name="opx-base-model"/>
 
   <!-- The following section is for all networking related functions including ACLs, QoS, etc.. -->
-  <project name="opx-nas-acl" remote="mabnhdev"/>
-  <project name="opx-nas-common" remote="mabnhdev"/>
-  <project name="opx-nas-daemon" remote="mabnhdev"/>
-  <project name="opx-nas-interface" remote="mabnhdev"/>
+  <project name="opx-nas-acl" remote="extreme_opx"/>
+  <project name="opx-nas-common" remote="extreme_opx"/>
+  <project name="opx-nas-daemon" remote="extreme_opx"/>
+  <project name="opx-nas-interface" remote="extreme_opx"/>
   <project name="opx-nas-l2"/>
   <project name="opx-nas-l3"/>
   <project name="opx-nas-ndi"/>
   <project name="opx-nas-ndi-api"/>
-  <project name="opx-nas-platform-s6000"/>
-  <project name="opx-nas-platform-vm"/>
-  <project name="opx-nas-qos" remote="mabnhdev"/>
+  <project name="opx-nas-qos" remote="extreme_opx"/>
 
   <!-- The following section is for the linux adaption layer - essentially the hooks allowing linux to work with the rest of the system -->
   <project name="opx-nas-linux"/>
 
   <!-- SAI -->
-  <project name="opx-sai-api"/>
-  <project name="opx-sai-common" remote="mabnhdev"/>
+  <project path="opx-sai-api" name="SAI" revision="dell.0.94+" />  
+  <project name="opx-sai-common" remote="extreme_opx"/>
   <project name="opx-sai-common-utils"/>
-  <project name="opx-sai-vm" remote="mabnhdev"/>
+  <project name="opx-sai-vm" remote="extreme_opx"/>
 
   <!-- The following section is for platform service configuration -->
   <project path="opx-pas" name="opx-pas"/>
 
   <!-- SDI -->
   <project name="opx-sdi-api"/>
-  <project name="opx-sdi-device-drivers" remote="mabnhdev"/>
+  <project name="opx-sdi-device-drivers" remote="extreme_opx"/>
   <project name="opx-sdi-sys"/>
-  <project name="opx-sdi-sys-vm" remote="mabnhdev"/>
+  <project name="opx-sdi-sys-vm" remote="extreme_opx"/>
   <project name="opx-sdi-framework"/>
 
   <!-- SDI implementation for Mellanox platforms -->
