@@ -25,7 +25,7 @@
   <project name="opx-nas-l2" remote="extreme_opx"/>
   <project name="opx-nas-l3"/>
   <project name="opx-nas-ndi" remote="extreme_opx"/>
-  <project name="opx-nas-ndi-api"/>
+  <project name="opx-nas-ndi-api" remote="extreme_opx"/>
   <project name="opx-nas-qos" remote="extreme_opx"/>
 
   <!-- The following section is for the linux adaption layer - essentially the hooks allowing linux to work with the rest of the system -->
