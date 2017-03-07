@@ -2,6 +2,7 @@
 <manifest>
   <remote name="extreme" fetch="ssh://git@giteng1" revision="master"/>
   <remote name="extreme_opx" fetch="ssh://git@giteng1" revision="extreme_opx"/>
+  <remote name="extreme_opx_x870" fetch="ssh://git@giteng1" revision="extreme_opx_x870"/>
   <remote name="opx" fetch="https://github.com/open-switch" revision="master"/>   
   <default remote="opx" sync-j="4"/>
 
@@ -25,6 +26,7 @@
   <project name="opx-nas-l2" remote="extreme_opx"/>
   <project name="opx-nas-l3"/>
   <project name="opx-nas-ndi" remote="extreme_opx"/>
+  <project name="opx-nas-ndi" path="opx-nas-ndi-x870" remote="extreme_opx_x870"/>
   <project name="opx-nas-ndi-api" remote="extreme_opx"/>
   <project name="opx-nas-qos" remote="extreme_opx"/>
 
@@ -54,6 +56,8 @@
   <project name="opx-tmpctl"/>
   
   <!-- The following section is for build tools and scripts -->
-  <project name="opx-build"/>
+  <project name="opx-build" remote="extreme_opx"/>
+
+  <!-- The following section is for Extreme Networks created repos -->
   <project name="opx-build-snap" remote="extreme"/>
 </manifest>
