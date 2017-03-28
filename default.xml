@@ -26,7 +26,7 @@
   <project name="opx-nas-l2" remote="extreme_opx"/>
   <project name="opx-nas-l3"/>
   <project name="opx-nas-ndi" remote="extreme_opx"/>
-  <project name="opx-nas-ndi" path="opx-nas-ndi-x870" remote="extreme_opx_bcm"/>
+  <project name="opx-nas-ndi" path="opx-nas-ndi-using-broadcom" remote="extreme_opx_bcm"/>
   <project name="opx-nas-ndi-api" remote="extreme_opx"/>
   <project name="opx-nas-qos" remote="extreme_opx"/>
 
