@@ -11,7 +11,7 @@
   
   <!-- The following section is for infrastructure and libraries-->
   <project name="opx-common-utils" remote="extreme_opx"/>
-  <project name="opx-cps"/>
+  <project name="opx-cps" remote="extreme_opx"/>
   <project name="opx-db-sql"/>
   <project name="opx-logging"/>
 
