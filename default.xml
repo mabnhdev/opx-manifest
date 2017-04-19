@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <manifest>
-  <remote name="extreme" fetch="ssh://git@giteng1" revision="master"/>
-  <remote name="extreme_opx" fetch="ssh://git@giteng1" revision="extreme_opx"/>
+  <remote name="extreme" fetch="http://github.com/mabnhdev" revision="master"/>
+  <remote name="extreme_opx" fetch="http://github.com/mabnhdev" revision="extreme_opx"/>
   <remote name="extreme_opx_bcm" fetch="ssh://git@giteng1" revision="extreme_opx_using_broadcom_sai"/>
   <remote name="opx" fetch="https://github.com/open-switch" revision="master"/>   
   <default remote="opx" sync-j="4"/>
